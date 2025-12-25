@@ -12,20 +12,21 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-4 lg:ml-32 lg:items-start">
         <div className="flex items-center gap-2 text-xl font-bold">
           <Image
-            src="https://www.1chooo.com/favicon.ico"
-            alt="Logo of 1chooo"
+            src="/favicon.ico"
+            alt="Logo of Lin Hugo"
             quality={100}
             width={32}
             height={32}
             draggable={false}
-          />1chooo
+            className="dark:invert"
+          />Lin Hugo
         </div>
         <span className="text-xs text-[#00000070] dark:text-[#ffffff70]">
-          Copyright © {new Date().getFullYear()} 1chooo
+          Copyright © {new Date().getFullYear()} Lin Hugo
         </span>
         <div className="flex items-center justify-center gap-3">
           <Link
-            href="https://github.com/1chooo"
+            href="https://github.com/Lin Hugo"
             className="cursor-pointer text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target='_blank'
             rel='noreferrer noopener'
@@ -51,7 +52,7 @@ const Footer = () => {
             href="/#"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white">Blog</Link>
           <Link
-            href="https://github.com/1chooo/tools/issues"
+            href="https://github.com/Lin Hugo/tools/issues"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target='_blank'
             rel='noreferrer noopener'
@@ -80,7 +81,7 @@ const Footer = () => {
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
           >Terms</Link>
           <Link
-            href="https://github.com/1chooo/tools/blob/main/LICENSE"
+            href="https://github.com/Lin Hugo/tools/blob/main/LICENSE"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
           >License</Link>
         </div>

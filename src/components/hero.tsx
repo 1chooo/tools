@@ -1,70 +1,61 @@
-import Link from 'next/link'
-import { cva, type VariantProps } from 'class-variance-authority'
+import Link from "next/link"
+import { ArrowRight, Github, Sparkles } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
-
-const buttonVariants = cva(
-  [
-    'ring-offset-background inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors',
-    'focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-    'disabled:pointer-events-none disabled:opacity-50'
-  ],
-  {
-    variants: {
-      variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        outline: 'border-input bg-background hover:bg-accent hover:text-accent-foreground border',
-        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline'
-      },
-      size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-9 px-3',
-        lg: 'h-11 px-8',
-        icon: 'size-10'
-      }
-    },
-    defaultVariants: {
-      variant: 'default',
-      size: 'default'
-    }
-  }
-)
-
-
-const Hero = () => {
+export default function Hero() {
   return (
-    <div className='my-12 space-y-8'>
-      <h1 className='text-3xl font-extrabold'>
-        The{' '}
-        <span className='bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent'>
-          Awesome
-        </span>{' '}
-        Online Tools
-      </h1>
-      <p className='leading-6 text-muted-foreground'>
-        Here are some free online tools created by{' '}
-        <Link href="https://1chooo.com" className="font-bold text-black underline dark:text-white">
-          @1chooo
-        </Link>, inspired by{' '}
-        <Link href="https://honghong.me" className="font-bold text-black underline dark:text-white">
-          @tszhong0411
-        </Link>.
-      </p>
-      <div className='flex gap-4'>
-        <Link href='#get-started' className={buttonVariants()}>
-          Get started
-        </Link>
-        <Link
-          href='https://github.com/1chooo/tools'
-          className={buttonVariants({ variant: 'outline' })}
-        >
-          Source code
-        </Link>
+    <section className="relative overflow-hidden py-20 md:py-32">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+
+      <div className="relative mx-auto max-w-4xl text-center">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border bg-muted/50 px-4 py-1.5 text-sm text-muted-foreground">
+          <Sparkles className="h-4 w-4 text-amber-500" />
+          <span>Free & Open Source</span>
+        </div>
+
+        <h1 className="text-balance text-4xl font-bold tracking-tight md:text-6xl">
+          The{" "}
+          <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Awesome</span>{" "}
+          Online Tools
+        </h1>
+
+        <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          A collection of free, fast, and beautiful developer tools. Built with modern web technologies, inspired by the
+          community.
+        </p>
+
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button asChild size="lg" className="gap-2">
+            <Link href="#get-started">
+              Get Started
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
+            <Link href="https://github.com/1chooo/tools" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+              View on GitHub
+            </Link>
+          </Button>
+        </div>
+
+        <p className="mt-8 text-sm text-muted-foreground">
+          Created by{" "}
+          <Link
+            href="https://1chooo.com"
+            className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
+          >
+            @1chooo
+          </Link>
+          , inspired by{" "}
+          <Link
+            href="https://honghong.me"
+            className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
+          >
+            @tszhong0411
+          </Link>
+        </p>
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Hero

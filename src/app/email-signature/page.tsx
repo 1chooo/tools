@@ -25,7 +25,7 @@ export default function SignatureCustomizer() {
     secondaryTitle: "",
     phone: "W: 012-345-6789",
     headshotUrl:
-      "https://www.1chooo.com/favicon.ico",
+      "/favicon.ico",
   })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -9,12 +9,12 @@ import { FaGithub } from "react-icons/fa";
 const Header = () => {
   return (
     <header className='fixed inset-x-0 top-0 z-40 shadow-sm saturate-100 backdrop-blur-[10px] border-b border-gray-200 dark:border-gray-800'>
-      <div className='mx-auto flex h-[60px] max-w-4xl items-center justify-between px-8'>
+      <div className='mx-auto flex h-[60px] max-w-6xl items-center justify-between px-8'>
         <Link href='/' aria-label='Home' title='Home'>
           <Image
-            src="https://www.1chooo.com/favicon.ico"
+            src="/favicon.ico"
             alt="Profile"
-            className="w-10 h-10 rounded-full object-cover"
+            className="w-10 h-10 rounded-full object-cover dark:invert"
             width={40}
             height={40}
           />

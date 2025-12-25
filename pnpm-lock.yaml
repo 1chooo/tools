@@ -23,6 +23,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      exifreader:
+        specifier: 4.33.1
+        version: 4.33.1
       lucide-react:
         specifier: 0.474.0
         version: 0.474.0(react@19.0.0)
@@ -595,6 +598,10 @@ packages:
   '@types/react@18.3.18':
     resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
 
+  '@xmldom/xmldom@0.9.8':
+    resolution: {integrity: sha512-p96FSY54r+WJ50FIOsCOjyj/wavs8921hG5+kVMmZgKcvIKxMXHTrjNJvRgWa/zuX3B6t2lijLNFaOyuxUH+2A==}
+    engines: {node: '>=14.6'}
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -768,6 +775,9 @@ packages:
 
   eventemitter3@4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
+
+  exifreader@4.33.1:
+    resolution: {integrity: sha512-KsVc4bRfZW255PSst5Opt5jUeLp+SD2+q6fmXQkMMkphpFCDBFjzNAvswgQa1YcMrXq+9Na6HJ6gS3wo2x7RRw==}
 
   fast-equals@5.2.2:
     resolution: {integrity: sha512-V7/RktU11J3I36Nwq2JnZEM7tNm17eBJz+u25qdxBZeCKiX6BkVSZQjwWIr+IobgnZy+ag73tTZgZi7tr0LrBw==}
@@ -1713,6 +1723,9 @@ snapshots:
       '@types/prop-types': 15.7.14
       csstype: 3.1.3
 
+  '@xmldom/xmldom@0.9.8':
+    optional: true
+
   ansi-regex@5.0.1: {}
 
   ansi-regex@6.1.0: {}
@@ -1867,6 +1880,10 @@ snapshots:
   emoji-regex@9.2.2: {}
 
   eventemitter3@4.0.7: {}
+
+  exifreader@4.33.1:
+    optionalDependencies:
+      '@xmldom/xmldom': 0.9.8
 
   fast-equals@5.2.2: {}
 
