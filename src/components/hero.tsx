@@ -14,9 +14,8 @@ export default function Hero() {
         </div>
 
         <h1 className="text-balance text-4xl font-bold tracking-tight md:text-6xl">
-          The{" "}
-          <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Awesome</span>{" "}
-          Online Tools
+          <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Lin Hugo</span>{" "}
+          Tools
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
@@ -39,22 +38,7 @@ export default function Hero() {
           </Button>
         </div>
 
-        <p className="mt-8 text-sm text-muted-foreground">
-          Created by{" "}
-          <Link
-            href="https://1chooo.com"
-            className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
-          >
-            @1chooo
-          </Link>
-          , inspired by{" "}
-          <Link
-            href="https://honghong.me"
-            className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
-          >
-            @tszhong0411
-          </Link>
-        </p>
+
       </div>
     </section>
   )
