@@ -14,7 +14,6 @@ const Footer = () => {
           <Image
             src="/favicon.ico"
             alt="Logo of Lin Hugo"
-            quality={100}
             width={32}
             height={32}
             draggable={false}
