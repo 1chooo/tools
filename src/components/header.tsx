@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import ThemeToggle from "@/components/theme/theme-toggle"
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             <span className="text-sm font-medium">GitHub</span>
             <FaGithub className="h-6 w-6" />
           </Link>
-          <ThemeToggle />
+          <AnimatedThemeToggler />
         </div>
       </div>
     </header>
